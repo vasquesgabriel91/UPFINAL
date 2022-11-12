@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header>
+        <img class="imglogo" src="https://drive.google.com/uc?id=1ZWZD6dKZN4CR7tOisFacjyq_AbO7u9W5" alt="">
+    </header>
+    <script>
+        alert("Utilize esse formulário para se comunicar conosco!");
+ 
+        dia = new Array ("Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado")
+        mes = new Array ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+        data = new Date
+         
+</script>
+
+    <p class="text">
+            <script type="text/javascript">
+                document.write (dia[data.getDay()] + ", " + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear())
+            </script>
+    </p>
+ 
+    <div class="formulario">
+        <div class="TituloContato"><h1>entre em contato conosco</h1> </div>
+        <form name="frmContato" method="get" action="mailto:teste@mail.com" target="_blank">
+            <fieldset>
+                
+                <legend>Dados Pessoais</legend>
+                <label for="nomesobrenome">* Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" name="" class="input-padrao" required placeholder="Seu nome">
+        
+                <label for="email">* E-mail</label>
+                <input type="email" id="email" name="" class="input-padrao" required placeholder="seuemail@dominio.com">
+        
+                <label for="email">Telefone</label>
+                <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+        
+                <label for="mensagem">* Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+            
+                <label for="contato">Como prefere o nosso contato?
+                    <input type="radio" value="radio-mail" name="Contato"> E-mail
+                    <input type="radio" value="radio-telefone" name="Contato"> Telefone
+                    <input type="radio" value="radio-whatsapp" name="Contato"> Whatsapp
+                </label>
+        
+                <br>
+                <label class="contatos" for="horario">Qual o motivo do seu contato?
+                    
+                    <select>
+                        <option>Selecione</option>
+                        <option>Dúvida</option>
+                        <option>Sugestão</option>
+                        <option>Elogio</option>
+                        <option>Reclamação</option>
+                    </select>
+                    <p>Entre em contato conosco pelo nosso whats app</p>
+                    <a class="whatsapp-link" href="https://wa.me/551129690292" target="_blank">+55 11 29690292 <i class="fa fa-whatsapp"></i></a>  
+                </label>
+                <br>
+            </fieldset>
+        
+            <label><input type="checkbox" class="chk" > Gostaria de receber nossas novidades por e-mail?</label>
+        
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+        </div>
+        <footer>
+            <img class="imglogo" src="https://drive.google.com/uc?id=1ZWZD6dKZN4CR7tOisFacjyq_AbO7u9W5" alt="">
+        </footer>
+</body>
+</html>
